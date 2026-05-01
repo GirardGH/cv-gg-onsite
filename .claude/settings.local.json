@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python3 \"C:\\\\Users\\\\a932617\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"portfolio cv consultant tech dark mode professional SaaS\" --design-system -p \"Ghislain GIRARD Portfolio\" -f markdown 2>&1)",
+      "PowerShell(python \"C:\\\\Users\\\\a932617\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"portfolio cv consultant tech dark mode professional SaaS\" --design-system -p \"Ghislain GIRARD Portfolio\" -f markdown 2>&1)"
+    ]
+  }
+}

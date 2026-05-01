@@ -1,0 +1,195 @@
+@import 'flag-icons/css/flag-icons.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ─── Light Mode (default) ─── */
+:root {
+  --sn-green: #4caf50;
+  --sn-green-dark: #388e3c;
+  --sn-green-light: #e8f5e9;
+  --sn-teal: #00897b;
+  --sn-teal-light: #e0f2f1;
+  --sn-navy: #1a3c5e;
+  --sn-dark: #1a3c5e;
+  --sn-mid: #e8edf2;
+  --sn-accent: #00897b;
+  --bg: #f7f9fc;
+  --bg-card: #ffffff;
+  --text-mid: #3d5a73;
+  --text-muted: #7a95aa;
+  --border: #d9e4ec;
+  --sidebar-bg: #1a3c5e;
+  --sidebar-text: #e8f0f7;
+  --sidebar-muted: #9bbcd4;
+  /* heading on main bg (not sidebar) */
+  --heading-text: #111827;
+  --heading-sub: #1a3c5e;
+}
+
+/* ─── Dark Mode ─── */
+.dark {
+  --sn-green: #62d84e;
+  --sn-green-dark: #4ab83c;
+  --sn-green-light: #0f2a10;
+  --sn-teal: #00a9a5;
+  --sn-teal-light: #0a2422;
+  --sn-navy: #c8dee8;
+  --sn-dark: #081c26;
+  --sn-mid: #0f3247;
+  --sn-accent: #3abfb8;
+  --bg: #081c26;
+  --bg-card: #0f3247;
+  --text-mid: #c8dee8;
+  --text-muted: #8baab8;
+  --border: #1a4a66;
+  --sidebar-bg: #050f17;
+  --sidebar-text: #e0eef5;
+  --sidebar-muted: #6a9ab0;
+  --heading-text: #e8f4ff;
+  --heading-sub: #c8dee8;
+}
+
+/* ─── Base ─── */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-mid);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sn-accent);
+}
+
+/* ─── Sidebar ─── */
+.sidebar {
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  transition: background-color 0.3s ease;
+}
+
+/* ─── Tag ─── */
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  background-color: var(--sn-mid);
+  color: var(--sn-accent);
+  border: 1px solid transparent;
+  display: inline-block;
+}
+
+.dark .tag {
+  background-color: rgba(58, 191, 184, 0.12);
+  color: var(--sn-accent);
+}
+
+.tag:hover,
+.tag.active {
+  background-color: var(--sn-green);
+  color: #fff;
+  border-color: var(--sn-green);
+  transform: scale(1.05);
+}
+
+/* ─── Card ─── */
+.xp-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.xp-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border-color: var(--sn-accent);
+}
+
+/* ─── ESN Badge ─── */
+.esn-badge-teal {
+  background: linear-gradient(135deg, var(--sn-teal), var(--sn-accent));
+  color: #fff;
+}
+
+.esn-badge-green {
+  background: linear-gradient(135deg, var(--sn-green-dark), var(--sn-green));
+  color: #fff;
+}
+
+/* ─── Skill bar track ─── */
+.skill-track {
+  background-color: var(--sn-mid);
+  border-radius: 100px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.dark .skill-track {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ─── Soft skill pill ─── */
+.soft-pill {
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 5px 14px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: default;
+  color: var(--text-mid);
+  background: var(--bg-card);
+}
+
+.soft-pill:hover {
+  background-color: var(--sn-teal);
+  color: #fff;
+  border-color: var(--sn-teal);
+  transform: translateY(-1px);
+}
+
+/* ─── Timeline ─── */
+.timeline-segment {
+  cursor: pointer;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+  border-radius: 4px;
+}
+
+.timeline-segment:hover {
+  filter: brightness(1.15);
+}
+
+/* ─── Print ─── */
+@media print {
+  .no-print { display: none !important; }
+}
