@@ -55,8 +55,8 @@ export function Sidebar({ cv }: SidebarProps) {
 
   return (
     <aside
-      className="sidebar w-64 xl:w-72 shrink-0 flex flex-col overflow-y-auto"
-      style={{ minHeight: '100vh' }}
+      className="sidebar w-full md:w-64 xl:w-72 shrink-0 flex flex-col overflow-y-auto"
+      style={{ minHeight: 'auto' }}
     >
       <div className="p-5 flex flex-col gap-0">
         {/* Photo */}
