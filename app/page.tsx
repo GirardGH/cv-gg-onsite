@@ -33,7 +33,7 @@ function AnimatedName({ name }: { name: string }) {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-none"
+      className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-none break-words"
       aria-label={name}
     >
       {chars.map((c, i) => (
