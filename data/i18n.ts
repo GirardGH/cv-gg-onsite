@@ -42,7 +42,7 @@ const fr = {
   /* ── CV page ── */
   cv_section_label: 'Consultant Technique ServiceNow',
   cv_experiences_title: 'Expériences Professionnelles',
-  cv_experiences_sub: '3 ans · 5 clients · 3 ESN',
+  cv_experiences_sub: '3 ans · 10 clients · 3 ESN',
 
   /* ── Sidebar ── */
   sidebar_contact: 'Contact',
@@ -182,10 +182,10 @@ const fr = {
   real_itsm_imp: ["Ségrégation des données 100% garantie entre les 2 entités", "Réduction des tickets manuels (~40% via automatisation email)", "Déploiement livré dans les délais — 0 incident de sécurité post-go-live"],
 
   real_tma_title: 'Support & évolutions ServiceNow multi-clients',
-  real_tma_hook: "5 clients maintenus en parallèle — SLA respectés, évolutions livrées en continu",
+  real_tma_hook: "7 clients maintenus en parallèle — SLA respectés, évolutions livrées en continu",
   real_tma_ctx: "Gestion TMA sur plusieurs clients simultanés (Pacifica, S2E, Orange Business…).",
   real_tma_sol: ["Résolution d'incidents complexes (scripting, debugging, optimisation)", "Développement d'évolutions (Business Rules, Flow Designer, Portal)", "Support utilisateurs & documentation technique", "Participation aux opérations de clone et gestion des releases"],
-  real_tma_imp: ["SLA incidents respectés sur 5 environnements clients", "Évolutions livrées en continu sans interruption de service", "Satisfaction client maintenue sur l'ensemble du périmètre CDS"],
+  real_tma_imp: ["SLA incidents respectés sur 7 environnements clients", "Évolutions livrées en continu sans interruption de service", "Satisfaction client maintenue sur l'ensemble du périmètre CDS"],
 
   real_ldap_title: 'Alignement des identités LDAP & IAM',
   real_ldap_hook: 'Incohérences entre annuaire LDAP et IAM → fiabilisation des identités',
@@ -245,7 +245,7 @@ const en: typeof fr = {
   /* ── CV page ── */
   cv_section_label: 'ServiceNow Technical Consultant',
   cv_experiences_title: 'Professional Experience',
-  cv_experiences_sub: '3 years · 5 clients · 3 companies',
+  cv_experiences_sub: '3 years · 10 clients · 3 companies',
 
   /* ── Sidebar ── */
   sidebar_contact: 'Contact',
@@ -385,10 +385,10 @@ const en: typeof fr = {
   real_itsm_imp: ["100% data segregation guaranteed between 2 entities", "~40% reduction in manual tickets via email automation", "Delivered on time — 0 security incident post go-live"],
 
   real_tma_title: 'ServiceNow Multi-client Support & Enhancements',
-  real_tma_hook: "5 clients maintained in parallel — SLA met, updates delivered continuously",
+  real_tma_hook: "7 clients maintained in parallel — SLA met, updates delivered continuously", //modif here
   real_tma_ctx: "TMA management across multiple simultaneous clients (Pacifica, S2E, Orange Business…).",
   real_tma_sol: ["Complex incident resolution (scripting, debugging, optimization)", "Feature development (Business Rules, Flow Designer, Portal)", "User support & technical documentation", "Participation in clone operations and release management"],
-  real_tma_imp: ["SLA respected across 5 client environments", "Updates delivered continuously without service interruption", "Client satisfaction maintained across the entire CDS scope"],
+  real_tma_imp: ["SLA respected across 7 client environments", "Updates delivered continuously without service interruption", "Client satisfaction maintained across the entire CDS scope"],
 
   real_ldap_title: 'LDAP & IAM Identity Alignment',
   real_ldap_hook: 'Inconsistencies between LDAP directory and IAM → identity data reliability',
