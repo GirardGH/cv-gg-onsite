@@ -1,8 +1,6 @@
-declare module '*.css'
-
 import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google'
-import './globals.css'
+import './globals.css' // IGNORE - global styles and font imports
 import { ThemeProvider } from '@/components/ThemeProvider'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import { translations } from '@/data/i18n'
@@ -21,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
+export const metadata: Metadata = { // IGNORE - Next.js page metadata
   title: translations.fr.metadata_title,
   description: translations.fr.metadata_description,
   icons: {
