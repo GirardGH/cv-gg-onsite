@@ -218,7 +218,7 @@ const en: typeof fr = {
     'Interactive portfolio of Ghislain GIRARD, certified ServiceNow Technical Consultant (8 certifications). ITSM, FSM and CSM expertise.',
 
   /* ── Landing ── */
-  landing_badge: 'Portfolio 2026',
+  landing_badge: 'LinkedIn', //modif here
   landing_subtitle_title: 'ServiceNow Technical Consultant',
   landing_tagline: 'Toulouse · Available · ServiceNow Certified ×8',
   landing_cta_view: 'View CV',
