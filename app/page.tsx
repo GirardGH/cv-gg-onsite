@@ -142,8 +142,13 @@ export default function LandingPage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4 }}
         >
+          <a
+            href="https://www.linkedin.com/in/ghislain-girard-1a9800a8/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
           <span
-            className="text-sm font-mono font-medium px-3 py-1 rounded-full border"
+            className="text-sm font-mono font-medium px-3 py-1 rounded-full border cursor-pointer hover:opacity-80 transition"
             style={{
               color: 'var(--sn-green)',
               borderColor: 'var(--sn-green)',
@@ -152,6 +157,7 @@ export default function LandingPage() {
           >
             {t.landing_badge}
           </span>
+          </a>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 20 }}

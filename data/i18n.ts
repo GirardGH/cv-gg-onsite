@@ -15,7 +15,7 @@ const fr = {
     'Portfolio interactif de Ghislain GIRARD, Consultant Technique ServiceNow certifié (8 certifications). Expertise ITSM, FSM, CSM.',
 
   /* ── Landing ── */
-  landing_badge: 'Portfolio 2026',
+  landing_badge: 'LinkedIn',
   landing_subtitle_title: 'Consultant Technique ServiceNow',
   landing_tagline: 'Toulouse · Disponible · Certifié 8× ServiceNow',
   landing_cta_view: 'Voir le CV',
