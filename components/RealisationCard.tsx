@@ -167,11 +167,13 @@ export function RealisationCard({ item, index }: Props) {
                               style={{ background: color }}
                             />
                             {/* Highlight numbers in impact items */}
+                            <span className="min-w-0">
                             {key === 'impact' ? (
                               <HighlightNumbers text={line} highlightColor={color} />
                             ) : (
                               line
                             )}
+                            </span>
                           </li>
                         ))}
                       </ul>

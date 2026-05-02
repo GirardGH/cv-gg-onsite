@@ -202,7 +202,7 @@ const cv: CVData = {
       missions: [
         {
           company:
-            'Crédit Agricole Pacifica · Société Générale · CA Titres · Fraikin · Sonepar ·Orange Business',
+            'Crédit Agricole Pacifica · Société Générale · CA Titres · Fraikin · Valeo · Sonepar · Orange Business',
           period: '09/2024 → Actuellement',
           role: 'role_tma',
           project: 'Eviden – Centre de Service (CDS)',
@@ -377,7 +377,7 @@ const cv: CVData = {
       problem:
         "Besoin de ségrégation stricte des données et d'un portail adapté à chaque société sans doublon d'infrastructure.",
       solution: [
-        'Mise en placeBusiness Rules de filtrage par compagnie (BR query)',
+        'Mise en place Business Rules de filtrage par compagnie (BR query)',
         'Configuration SSO via OKTA',
         'Développement portail dynamique multi-company (Angular JS)',
         "Automatisation création incidents via intégration email IMAP",
