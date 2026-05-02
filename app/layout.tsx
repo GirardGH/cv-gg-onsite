@@ -1,3 +1,5 @@
+declare module '*.css'
+
 import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
@@ -23,12 +25,7 @@ export const metadata: Metadata = {
   title: translations.fr.metadata_title,
   description: translations.fr.metadata_description,
   icons: {
-    icon: [
-      {
-        url: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%2362D84E'/><text y='72' x='50' text-anchor='middle' font-size='64' font-family='sans-serif' fill='white'>SN</text></svg>",
-        type: 'image/svg+xml',
-      },
-    ],
+    icon: '/favicon.ico',
   },
 }
 

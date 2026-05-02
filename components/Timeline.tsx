@@ -58,7 +58,7 @@ export function Timeline({ onSegmentClick }: TimelineProps) {
       initial={{ opacity: 0, y: -12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="mb-8 p-4 rounded-xl border"
+      className="mb-8 p-3 sm:p-4 rounded-xl border w-full overflow-hidden"
       style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
     >
       <p className="text-xs font-semibold mb-3 uppercase tracking-widest" style={{ color: 'var(--text-muted)' }}>
@@ -83,7 +83,7 @@ export function Timeline({ onSegmentClick }: TimelineProps) {
             whileHover={{ filter: 'brightness(1.15)' }}
             title={`${t.timeline_view} ${seg.label}`}
           >
-            <span className="text-white text-[10px] font-semibold truncate px-2 leading-none">
+            <span className="text-white text-[8px] sm:text-[10px] font-semibold truncate px-1 sm:px-2 leading-none">
               {seg.label}
             </span>
           </motion.button>
@@ -91,12 +91,25 @@ export function Timeline({ onSegmentClick }: TimelineProps) {
       </div>
 
       {/* Year markers */}
-      <div className="relative mt-1 h-5">
+      <div className="relative mt-1 h-5 pr-5">
         {yearMarkers.map((year) => (
           <div
             key={year}
             className="absolute flex flex-col items-center"
-            style={{ left: `${toPercent(year)}%`, transform: 'translateX(-50%)' }}
+            style={{
+              left:
+                year === 2023
+                  ? '0%'
+                  : year === 2026
+                    ? '100%'
+                    : `${toPercent(year)}%`,
+              transform:
+                year === 2023
+                  ? 'translateX(0)'
+                  : year === 2026
+                    ? 'translateX(-100%)'
+                    : 'translateX(-50%)',
+            }}
           >
             <div className="w-px h-2 mt-0.5" style={{ background: 'var(--border)' }} />
             <span className="text-[10px] font-mono mt-0.5" style={{ color: 'var(--text-muted)' }}>
@@ -104,19 +117,19 @@ export function Timeline({ onSegmentClick }: TimelineProps) {
             </span>
           </div>
         ))}
-        <div
-          className="absolute flex flex-col items-center"
-          style={{ right: 0 }}
+        {/* <div
+          className="absolute flex flex-col items-end"
+          style={{ right: '-14px' }}
         >
           <div className="w-px h-2 mt-0.5" style={{ background: 'var(--sn-teal)' }} />
           <span className="text-[10px] font-mono mt-0.5 font-bold" style={{ color: 'var(--sn-teal)' }}>
             {t.timeline_now}
           </span>
-        </div>
+        </div> */}
       </div>
 
       {/* Legend */}
-      <div className="flex flex-wrap gap-3 mt-2">
+      <div className="flex flex-wrap gap-2 sm:gap-3 mt-3">
         {segments.map((seg) => (
           <button
             key={seg.id}
@@ -125,7 +138,7 @@ export function Timeline({ onSegmentClick }: TimelineProps) {
           >
             <div className="w-3 h-3 rounded-sm" style={{ background: seg.color }} />
             <span
-              className="text-[11px] font-medium transition-colors duration-150 group-hover:underline"
+              className="text-[10px] sm:text-[11px] font-medium transition-colors duration-150 group-hover:underline"
               style={{ color: 'var(--text-mid)' }}
             >
               {seg.label}
