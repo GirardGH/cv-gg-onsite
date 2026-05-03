@@ -252,7 +252,7 @@ const cv: CVData = {
           tags: [
             'Security Admin', 'ITSM', 'Workflow', 'Flow Designer',
             'Transform Map', 'Script Includes', 'Business Rules', 'Fix Script',
-            'Angular JS', 'Employee Center', 'Inbound Action',
+            'Angular JS', 'Employee Center', 'Inbound Action', 'Auth 2.0', 'IMAP',
           ],
         },
       ],
