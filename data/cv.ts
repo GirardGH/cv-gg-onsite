@@ -301,7 +301,7 @@ const cv: CVData = {
       title: 'Synchronisation IAM & données de paie',
       oneliner: 'Incohérences IAM indétectables → moteur de comparaison automatisé from scratch',
       level: 'Automatisation',
-      levelColor: '#62D84E',
+      levelColor: '#3ABFB8', //modif
       context:
         "Projet de contrôle de cohérence entre identités IAM et données RH importées via Excel.",
       problem:
