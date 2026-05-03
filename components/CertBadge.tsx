@@ -6,8 +6,8 @@ import type { Certification } from '@/data/cv'
 
 const yearColors: Record<number, string> = {
   2026: '#3ABFB8',
-  2025: '#62D84E',
-  2024: '#00A9A5',
+  2025: '#00A9A5',
+  2024: '#62D84E',
   2023: '#4CAF50',
 }
 

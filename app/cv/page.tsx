@@ -126,12 +126,12 @@ export default function CVPage() {
             className="mb-6"
           >
             <p
-              className="text-[10px] font-bold uppercase tracking-[0.2em] mb-1"
+              className="hidden md:block text-[10px] font-bold uppercase tracking-[0.2em] mb-1"
               style={{ color: 'var(--sn-teal)' }}
             >
               {t.cv_section_label}
             </p>
-            <h1 className="text-3xl md:text-4xl font-extrabold leading-tight mb-3">
+            <h1 className="hidden md:block text-3xl md:text-4xl font-extrabold leading-tight mb-3">
               <span style={{ color: 'var(--heading-text)' }}>Ghislain </span>
               <span style={{ color: 'var(--sn-green)' }}>GIRARD</span>
             </h1>
