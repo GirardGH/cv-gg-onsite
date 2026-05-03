@@ -168,10 +168,10 @@ const cv: CVData = {
     { name: 'Administration ServiceNow', level: 100 },
     { name: 'JavaScript', level: 100 },
     { name: 'HTML/CSS · Portal Design', level: 100 },
-    { name: 'Base de données · SQL', level: 100 },
+    { name: 'Base de données · SQL', level: 80 },
     { name: 'Paramétrage ITSM', level: 100 },
     { name: 'Service Portal', level: 70 },
-    { name: 'ITIL · Agile/Scrum', level: 70 },
+    { name: 'ITIL · Agile/Scrum', level: 90 },
   ],
   softSkills: [
     'Aisance relationnelle',
